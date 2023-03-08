@@ -1,4 +1,10 @@
 import "../styles/App.css";
-let App = () => <div className="App"></div>;
+import Products from "./ProductsContainer.js";
+
+let App = () => (
+  <div className="App">
+    <Products />
+  </div>
+);
 
 export default App;
