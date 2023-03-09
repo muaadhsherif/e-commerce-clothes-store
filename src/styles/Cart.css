@@ -1,0 +1,7 @@
+.cart-container {
+  width: 350px;
+  flex-shrink: 0;
+  border-left-width: 3px;
+  border-left-style: groove;
+  border-left-color: #00000078;
+}
