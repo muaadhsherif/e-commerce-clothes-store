@@ -41,9 +41,14 @@ const Product = () => (
             <li className="green"></li>
             <li className="yellow"></li>
           </ul>
-          <button className="product-price">
-            USD<b>234</b>.50
-          </button>
+          <div className="product-price">
+            <button className="plus">-</button>
+            <button className="product-price-btn">
+              <strong>234</strong>
+              <span>.50</span>
+            </button>
+            <button className="minus">+</button>
+          </div>
         </div>
       </div>
     </div>
