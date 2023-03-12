@@ -6,20 +6,21 @@
 
 .card {
   border-radius: 25px;
-  box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
+  /* Night: box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3); */
 }
 
 .card-head {
   position: relative;
   height: 252px;
-  background: #fa782e; /* Old browsers */
-  background: -moz-linear-gradient(-45deg, #fa782e 8%, #c82930 83%);
+  /* background: #fa782e; */ /* Old browsers */
+  /* background: -moz-linear-gradient(-45deg, #fa782e 8%, #c82930 83%);
   background: -webkit-linear-gradient(-45deg, #fa782e 8%, #c82930 83%);
   background: linear-gradient(
     135deg,
     #fa782e 8%,
     #c82930 83%
-  ); /*radial-gradient(939px at 94.7% 50%, rgb(0, 178, 169) 0%, rgb(0, 106, 101) 76.9%)*/ /*linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%)*/
+  ); */ /*radial-gradient(939px at 94.7% 50%, rgb(0, 178, 169) 0%, rgb(0, 106, 101) 76.9%)*/ /*linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%)*/
+  background-color: #fff;
   border-radius: 25px 25px 0 0;
   text-align: center;
   padding-top: 30px;
@@ -38,9 +39,8 @@
 
 .product-details {
   padding: 0 20px;
-  font-size: 11px;
-  color: #fff;
-  text-align: left;
+  color: black; /* Night: #fff; */
+  text-align: center;
 }
 
 .product-details h2 {
@@ -81,12 +81,12 @@
   letter-spacing: 0px;
 }
 
-.badge {
+.new-badge {
   position: relative;
   font-size: 10px;
   font-weight: 300;
   color: #fff;
-  background: rgb(27, 26, 32);
+  background: #0bc149;
   padding: 2px 5px;
   border-radius: 4px;
   top: -2px;
@@ -123,13 +123,14 @@
   border-radius: 100%;
   text-align: center;
   line-height: 23px;
-  color: #000;
   cursor: pointer;
+  opacity: .6;
 }
 
 .product-size li.active {
   background: #f35e3d;
   color: #fff;
+  opacity: 1;
 }
 
 .product-size li:hover {
@@ -157,25 +158,31 @@
   height: 16px;
   border-radius: 100%;
   cursor: pointer;
+  opacity: .6;
 }
 
 .product-color li.orange {
   background: #f35e3d;
+  color: #f35e3d
 }
 
 .product-color li.green {
   background: #11e95b;
+  color: #11e95b
 }
 
 .product-color li.yellow {
   background: #ffd414;
+  color: #ffd414
 }
 
-.product-color li.active:after {
+.product-color li.active{opacity: 1;}
+
+.product-color li.active:after, .product-color li:hover:after {
   position: absolute;
   content: "";
   display: inline-block;
-  border: 1px solid #f35e3d;
+  border: 1px solid ;
   width: 24px;
   height: 24px;
   border-radius: 100%;
@@ -192,7 +199,7 @@
 
 .product-price button {
   /* box-shadow: -10px 20px 15px -10px rgb(27 26 32 / 30%); */
-  background: rgb(27, 26, 32);
+  background: linear-gradient( 135deg, #fa782e 8%, #c82930 83% );/*Night: rgb(27, 26, 32); */ /* Green:#0bc149 */
   color: #fff;
   display: inline-block;
   padding: 7px 20px;
@@ -203,5 +210,5 @@
   margin-left: 5px; 
 }
 
-.product-price .minus{border-radius: 0 7px 7px 0;}
-.product-price .plus{border-radius: 7px 0 0 7px;}
+.product-price .minus{border-radius: 7px 0 0 7px;}
+.product-price .plus{border-radius: 0 7px 7px 0;}

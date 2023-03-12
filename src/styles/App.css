@@ -1,9 +1,6 @@
 body {
     font-family: "Roboto", sans-serif;
-    background: rgb(27, 26, 32);
+    background: #eee/* Night: rgb(27, 26, 32); */
   }
-  
-.App{
-    display: flex;}
 
 button {cursor: pointer;}

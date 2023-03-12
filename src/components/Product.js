@@ -1,3 +1,4 @@
+import React from "react";
 import "../styles/Product.css";
 
 const Product = () => (
@@ -6,17 +7,21 @@ const Product = () => (
       <div className="card-head">
         <div class="free-shipping">FREE SHIPPING</div>
         <div className="product-details">
-          <h2>Hartbeespoort</h2> Support and Adiddas Zoom Air come together for
-          a more supportive feel with high-speed responsiveness
+          <h2>Hartbeespoort</h2>
+          <img
+            src="https://s.alicdn.com/@sc04/kf/Hf56b6482603c4a4c81d7ef20bdad25423.jpg_960x960.jpg"
+            alt="XL Gray shirt."
+            width="200px"
+          />
         </div>
-        <span className="back-text">XL</span>
+        {/* <span className="back-text">XL</span> */}
       </div>
 
       <div className="card-body">
         <div>
           <span className="product-title">
             Hartbee<b>spoort</b>
-            <span className="badge">New</span>
+            <span className="new-badge">New</span>
           </span>
           <span className="product-caption">Basket Ball Collection</span>
           <span className="product-rating">
@@ -35,23 +40,23 @@ const Product = () => (
             <li className="active">XL</li>
             <li>XXL</li>
           </ul>
-
           <ul className="product-color">
             <li className="orange active"></li>
             <li className="green"></li>
             <li className="yellow"></li>
           </ul>
           <div className="product-price">
-            <button className="plus">-</button>
+            <button className="minus">-</button>
             <button className="product-price-btn">
               <strong>234</strong>
               <span>.50</span>
             </button>
-            <button className="minus">+</button>
+            <button className="plus">+</button>
           </div>
         </div>
       </div>
     </div>
   </div>
 );
+
 export default Product;
