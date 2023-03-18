@@ -52,16 +52,14 @@ const Product = () => (
             <li className="yellow"></li>
           </ul>
           <div className="product-price">
-            <button className="minus">-</button>
+            <button className="minus in-active">-</button>
             <button className="price">
               <span className="cart-with-quantinty">
                 <span className="quantity">1</span>
                 <Cart />
               </span>
-              234.
-              <span className="piasters">
-                50<span className="currency">$</span>
-              </span>
+              <span className="currency">$</span> 234
+              <span className="piasters">.50</span>
             </button>
             <button className="plus">+</button>
           </div>

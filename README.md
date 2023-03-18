@@ -68,3 +68,16 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+/* const products = [
+  {
+    id: 423422345,
+    colors: ["red", "blue", "yellow"],
+    sizes: ["s", "m", "l", "xl"],
+    images: ["fsdfs", "fsdfsdf"],
+    IsNew: false,
+    price:,
+    discount: function or false
+  },
+];

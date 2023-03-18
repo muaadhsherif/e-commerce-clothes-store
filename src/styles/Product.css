@@ -218,7 +218,7 @@
 
 .product-price .price {
   padding: 7px;
-  color: #ffda36;
+  color: #f9dd65 /* #ffda36 */
 }
 
 @keyframes tilt-shaking {
@@ -258,3 +258,5 @@
 .product-price .plus {
   border-radius: 0 7px 7px 0;
 }
+
+.in-active{opacity: .6;}

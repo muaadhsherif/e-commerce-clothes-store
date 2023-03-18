@@ -1,11 +1,9 @@
-import "../styles/svg.css";
-
 let Star = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 20 20"
     fill="currentColor"
-    className="star"
+    style={{ width: "12px" }}
   >
     <path
       fillRule="evenodd"
@@ -20,7 +18,7 @@ let GrayStar = () => (
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 20 20"
     fill="currentColor"
-    className="star gray"
+    style={{ width: "12px", color: "#acacab" }}
   >
     <path
       fillRule="evenodd"
@@ -48,7 +46,7 @@ let OutlineCart = () => (
 
 let SolidCart = () => (
   <svg
-    style={{ color: "#0bc149" }}
+    style={{ color: "#0bc149", animation: "none" }}
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 20 20"
     fill="currentColor"
