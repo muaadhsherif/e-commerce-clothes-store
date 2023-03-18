@@ -1,0 +1,31 @@
+.item-container {
+  padding: 0;
+  display: flex;
+}
+
+hr {
+  width: 87%;
+  border-color: #fff;
+  margin-left: 0;}
+
+.item-container img {
+  margin-top: 20px
+}
+
+.item-info {
+  width: 37%;
+  margin-left: 18px;
+  margin-right: 12px;
+  text-transform: capitalize;
+  padding-top: 13px;
+}
+
+.item-price {
+  width: 47%;
+  text-align: right;
+}
+.item-price table{border-spacing: 3px 13px;}
+.item-price  tr{margin-bottom: 10px;}
+.item-price  td:first-child{color: #909090; text-align: right;}
+.item-price  td:last-child{ text-align: left;}
+.item-price  tr:last-child td{ font-weight: bold;font-size: 17px;}
